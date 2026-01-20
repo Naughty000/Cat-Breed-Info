@@ -3,91 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Project</title>
+    <title>Cat Photo App</title>
+    <link rel="stylesheet" href="catApp.css">
 </head>
-<link rel="stylesheet" href="style.css">
 <body>
-    <!-- <h1><b>CatPhotoApp</b></h1>
-    <br>
-    <h2>Cat Photos</h2>
-<br> -->
+    <header>
+        <h1>🐱 CatPhotoApp</h1>
+    </header>
+    
+    <main>
+        <section class="intro">
+            <h2>Cat Photos</h2>
+            <p>Everyone <em>loves</em> <a href="https://cdn.freecodecamp.org/curriculum/cat-photo-app/running-cats.jpg" target="_blank">cute cats</a> online!</p>
+            <p>See more <a href="https://freecatphotoapp.com/" target="_blank">cat photos</a> in our gallery.</p>
+            <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A relaxing cat" class="cat-image">
+        </section>
 
-    <p>Everyone <em>loves</em> <a rel="noopener" href="https://cdn.freecodecamp.org/curriculum/cat-photo-app/running-cats.jpg" target="_blank">cute cats </a>online!
-    <br>
-    See more <a rel="noopener" href="https://freecatphotoapp.com/" target="_blank">cat photos </a>in our gallery.</p>
-    <br>
-    <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="cat">
-    <br>
-
-    <h2>Cat Lists</h2>
-    <br>
-    <h3>Things cats love:</h3>
-    <br>
-    <ul>
-        <li>catnip</li>
-        <li>laser pointers</li>
-        <li>lasagna</li>
-    </ul>
-    <br>
-    <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="cat">
-    <p>Cats <i>love</i> lasagna</p>
-    <h3>Top 3 things cats hate:</h3>
-    <br>
-    <ol>
-        <li>flea treatment</li>
-        <li>thunder</li>
-        <li>other cats</li>
-    </ol>
-    <br>
-    <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" alt="cat">
-    <p>Cats <b>hate</b> other cats.</p>
-<br>
-    <h2>Cat form</h2>
-    <br>
-    <form>
-        <div class="d1">
-            <p class="bordertext">IS your cat an indoor or outdoor cat?</p>
-            <br>
-            <label>
-                <input type="radio" name="cat-type" value="Indoor"  style="accent-color:blue" >
-                <p class="p1">Indoor</p>
-
-        </label>
-            <label>
-                <input type="radio" name="cat-type" value="Outdoor" style="accent-color:blue">
-                <p class="p1">Outdoor</p>
-
-            </label>
+        <section class="cat-lists">
+            <h2>Cat Lists</h2>
             
-            
+            <div class="things-love">
+                <h3>Things cats love:</h3>
+                <ul class="in">
+                    <li>Catnip</li>
+                    <li>Laser pointers</li>
+                    <li>Lasagna</li>
+                </ul>
+                <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="Lasagna" class="cat-image">
+                <p>Cats <i>love</i> lasagna</p>
+            </div>
 
-        </div>
-        <div class="d2">
-       <p class="bordertext">What's your cat's personality?</p> 
-        <br>
-        <label>
-        <input type="checkbox"  name="quality" value="Loving" style="accent-color:blue">
-        <P class="p1">Loving</P>
-        </label>
-        <label>
-        <input type="checkbox" name="quality" value="Lazy" style="accent-color:blue">
-        <P class="p1">Lazy</P>
-        </label>
-        <label>
-        <input type="checkbox" name="quality" value="energetic" style="accent-color:blue">
-        <P class="p1">Energetic</P>
-        
-        </label>
-        <br>
-        </div>
-        <input type="text" placeholder="cat photo URL">
+            <div class="things-hate">
+                <h3>Top 3 things cats hate:</h3>
+                <ol>
+                    <li>Flea treatment</li>
+                    <li>Thunder</li>
+                    <li>Other cats</li>
+                </ol>
+                <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" alt="Cats together" class="cat-image">
+                <p>Cats <b>hate</b> other cats.</p>
+            </div>
+        </section>
 
-        <button style="margin-bottom:20px">Submit</button>
-        <br>
-        No Copyright - <a rel="noopener" href="https://www.freecodecamp.org/" target="_blank">freecodeCamp.org</a>
+        <section class="cat-form">
+            <h2>Cat Form</h2>
+            <form id="catForm">
+                <div class="d1">
+                    <p class="bordertext">Is your cat an indoor or outdoor cat?</p>
+                    <label>
+                        <input type="radio" name="cat-type" value="Indoor" style="accent-color:blue">
+                        <span class="p1">Indoor</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="cat-type" value="Outdoor" style="accent-color:blue">
+                        <span class="p1">Outdoor</span>
+                    </label>
+                </div>
+                
+                <div class="d2">
+                    <p class="bordertext">What's your cat's personality?</p>
+                    <label>
+                        <input type="checkbox" name="quality" value="Loving" style="accent-color:blue">
+                        <span class="p1">Loving</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" name="quality" value="Lazy" style="accent-color:blue">
+                        <span class="p1">Lazy</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" name="quality" value="Energetic" style="accent-color:blue">
+                        <span class="p1">Energetic</span>
+                    </label>
+                </div>
 
-    </form>
+                <div class="input-group">
+                    <input type="text" placeholder="Enter cat photo URL" required>
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>No Copyright - <a href="https://www.freecodecamp.org/" target="_blank">freeCodeCamp.org</a></p>
+    </footer>
+
+    <script src="catApp.js"></script>
 </body>
-
 </html>
-
